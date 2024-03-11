@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Martian Grotesk';
+    font-display: swap;
+    src: url('https://cdn.evilmartians.com/front/fonts/MartianGrotesk-1.0.woff2') format('woff2');
+    font-weight: 100 1000; /* Th: 100, xLt: 200, Lt: 300, Rg: 400, Md: 500, (no 600), Bd: 700, xBd: 800, Bl: 900, Ult: 1000 */
+    font-stretch: 75% 200%; /* Cn: 75%,  Nr: 87.5%,  Std: 100%,  sWd: 112.5%,  Wd: 125%,  xWd: 150%,  uWd: 200% */
+  }
+  
+  @font-face {
+    font-family: 'Martian Mono';
+    font-display: swap;
+    src: url('https://cdn.evilmartians.com/front/fonts/MartianMono-1.0.0.woff2') format('woff2');
+    font-weight: 100 800; /* Th: 100, xLt: 200, Lt: 300, Rg: 400, Md: 500, (no 600), Bd: 700, xBd: 800 */
+    font-stretch: 75% 112.5%; /* Cn: 75%,  Nr: 87.5%,  Std: 100%,  sWd: 112.5% */
+  }
+  

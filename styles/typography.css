@@ -1,0 +1,9 @@
+.annotated-list ul li p:first-child {
+  margin-bottom: 0.5rem;
+}
+
+.annotated-list ul li p:not(:first-child) {
+  margin-top: 0.5rem;
+  font-size: 80%;
+  color: gray;
+}
