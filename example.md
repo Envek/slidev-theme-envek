@@ -1,5 +1,7 @@
 ---
 theme: ./
+martiansProgressBarDuration: 10
+martiansProgressBarStartSlide: 2
 ---
 
 # Slidev Theme Starter
