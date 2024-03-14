@@ -1,6 +1,8 @@
 <script setup>
 import { ref, onUnmounted, computed, watch, nextTick } from 'vue'
 import { useSlideContext } from '@slidev/client'
+import martianImage from './assets/martian.svg';
+import humanImage from './assets/human.svg';
 
 const { $slidev } = useSlideContext();
 
@@ -63,8 +65,8 @@ onUnmounted(() => {
   <div v-show="progressBarEnabled">
     <div ref="containerRef" class="relative z-50 h-2 w-full bg-gray-400">
       <div class="absolute top-0 left-0 bottom-0 w-full bg-green-500 transform-origin-left transition-transform" :style="{ transform: `scaleX(${progressBarScaleX})` }" />
-      <img ref="martianRef" src="/graphics/human.svg" class="w-8 absolute left-0 bottom-0 transition-transform" :style="{ transform: `translateX(${humanTranslateX}px) scaleX(${humanScaleX}%)` }" />
-      <img ref="humanRef" src="/graphics/martian.svg" class="w-8 absolute left-0 bottom-0 transition-transform" :style="{ transform: `translateX(${martianTranslateX}px)` }" />
+      <img ref="martianRef" :src="humanImage" class="w-8 absolute left-0 bottom-0 transition-transform" :style="{ transform: `translateX(${humanTranslateX}px) scaleX(${humanScaleX}%)` }" />
+      <img ref="humanRef" :src="martianImage" class="w-8 absolute left-0 bottom-0 transition-transform" :style="{ transform: `translateX(${martianTranslateX}px)` }" />
     </div> 
   </div>
 </template>
