@@ -12,6 +12,7 @@ const startAtSlide = computed(() => ($slidev.configs.martiansProgressBarStartSli
 const plannedDuration = computed(() => ($slidev.configs.martiansProgressBarDuration || 0));
 const humanProgress = computed(() => ($slidev.nav.currentSlideNo - startAtSlide.value) / ($slidev.nav.total - startAtSlide.value));
 const martianProgress = computed(() => Math.min(elapsedMinutes.value / plannedDuration.value, 1));
+const progressBarEnabled = computed(() => $slidev.nav.currentSlideRoute.meta.slide.frontmatter.progressBar !== false && $slidev.nav.currentSlideNo >= startAtSlide.value);
 
 // sizes handling
 const containerRef = ref(null);
@@ -59,7 +60,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div v-show="$slidev.nav.currentSlideNo >= startAtSlide">
+  <div v-show="progressBarEnabled">
     <div ref="containerRef" class="relative z-50 h-2 w-full bg-gray-400">
       <div class="absolute top-0 left-0 bottom-0 w-full bg-green-500 transform-origin-left transition-transform" :style="{ transform: `scaleX(${progressBarScaleX})` }" />
       <img ref="martianRef" src="/graphics/human.svg" class="w-8 absolute left-0 bottom-0 transition-transform" :style="{ transform: `translateX(${humanTranslateX}px) scaleX(${humanScaleX}%)` }" />
