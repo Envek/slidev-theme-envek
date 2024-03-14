@@ -14,6 +14,16 @@ theme: <b>envek</b>
 
 Learn more about [how to use a theme](https://sli.dev/themes/use).
 
+## Progress bar
+
+This theme provides a progress bar at the bottom of all slides. Martian figure is used as a progress indicator based on elapsed time since presentation started (compared to planned talk time), while human figure shows progress based on current slide number (compared to total number of slides).
+
+Specify the planned talk time in minutes by adding `martiansProgressBarDuration` to the frontmatter of your `slides.md`. For example, add `martiansProgressBarDuration: 30` to the frontmatter to set the planned talk time to 30 minutes.
+
+You can also specify the slide number at which the progress bar should start showing the martian figure by adding `martiansProgressBarStartSlide` to the frontmatter of your `slides.md`.
+
+Progress bar can be hidden on a per-slide basis by adding `progressBar: false` to the slide's frontmatter.
+
 ## Layouts
 
 This theme provides the following layouts:
