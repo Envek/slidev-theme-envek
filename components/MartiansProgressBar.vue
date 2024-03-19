@@ -67,7 +67,7 @@ onUnmounted(() => {
 
 <template>
   <div v-show="progressBarEnabled">
-    <div ref="containerRef" class="relative z-50 h-2 w-full bg-gray-400">
+    <div ref="containerRef" class="relative z-50 h-1 w-full bg-gray-400">
       <div class="absolute top-0 left-0 bottom-0 w-full bg-green-500 transform-origin-left transition-transform" :style="{ transform: `scaleX(${progressBarScaleX})` }" />
       <img ref="humanRef" :src="humanImage" class="w-8 absolute left-0 bottom-0 transition-transform" :style="{ transform: `translateX(${humanTranslateX}px) scaleX(${humanScaleX}%)` }" />
       <RenderWhen context="print">
