@@ -1,5 +1,7 @@
 ---
 theme: ./
+talkDurationMinures: 10
+progressBarStartSlide: 2
 ---
 
 # Slidev Theme Starter
