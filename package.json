@@ -23,7 +23,8 @@
     "qrcode.vue": "^3.4.1"
   },
   "devDependencies": {
-    "@slidev/cli": "^0.48.3"
+    "@slidev/cli": "^0.48.3",
+    "playwright-chromium": "^1.42.1"
   },
   "//": "Learn more: https://sli.dev/themes/write-a-theme.html",
   "slidev": {
