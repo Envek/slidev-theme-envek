@@ -25,7 +25,7 @@ const humanTranslateX = computed(() =>
   (sizes.value.containerWidth - sizes.value.humanImageWidth - sizes.value.martianImageWidth) * humanProgress.value + sizes.value.martianImageWidth
 );
 const martianTranslateX = computed(() =>
-  (sizes.value.containerWidth - sizes.value.martianImageWidth) * martianProgress.value
+(sizes.value.containerWidth - sizes.value.humanImageWidth - sizes.value.martianImageWidth) * martianProgress.value
 );
 const martianTranslateXInPrintCtx = computed(() => {
   return humanTranslateX.value - sizes.value.martianImageWidth
