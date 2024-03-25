@@ -1,6 +1,6 @@
 ---
 theme: ./
-talkDurationMinures: 10
+talkDurationMinutes: 10
 progressBarStartSlide: 2
 ---
 

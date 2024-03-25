@@ -11,7 +11,7 @@ const intervalId = ref();
 const startTime = ref(0);
 const elapsedMinutes = ref(0)
 const startAtSlide = computed(() => ($slidev.configs.progressBarStartSlide || 1));
-const plannedDuration = computed(() => ($slidev.configs.talkDurationMinures || 0));
+const plannedDuration = computed(() => ($slidev.configs.talkDurationMinutes || 0));
 const humanProgress = computed(() => ($slidev.nav.currentSlideNo - startAtSlide.value) / ($slidev.nav.total - startAtSlide.value));
 const martianProgress = computed(() => Math.min(elapsedMinutes.value / plannedDuration.value, 1));
 const progressBarEnabled = computed(() => $slidev.nav.currentSlideRoute.meta.slide.frontmatter.progressBar !== false && $slidev.nav.currentSlideNo >= startAtSlide.value);

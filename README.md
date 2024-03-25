@@ -18,7 +18,7 @@ Learn more about [how to use a theme](https://sli.dev/themes/use).
 
 This theme provides a progress bar at the bottom of all slides. Martian figure is used as a progress indicator based on elapsed time since presentation started (compared to planned talk time), while human figure shows progress based on current slide number (compared to total number of slides).
 
-Specify the planned talk time in minutes by adding `talkDurationMinures` to the frontmatter of your `slides.md`. For example, add `talkDurationMinures: 30` to the frontmatter to set the planned talk time to 30 minutes.
+Specify the planned talk time in minutes by adding `talkDurationMinutes` to the frontmatter of your `slides.md`. For example, add `talkDurationMinutes: 30` to the frontmatter to set the planned talk time to 30 minutes.
 
 You can also specify the slide number at which the progress bar should start showing the martian figure by adding `progressBarStartSlide` to the frontmatter of your `slides.md`.
 
