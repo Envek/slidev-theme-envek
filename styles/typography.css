@@ -7,3 +7,14 @@
   font-size: 80%;
   color: gray;
 }
+
+.slidev-slide-content {
+  --slidev-code-font-size: 18px;
+  --slidev-code-line-height: 30px;
+}
+
+.slidev-page {
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1em;
+  }
+}
